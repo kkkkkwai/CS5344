@@ -24,3 +24,5 @@ Video
 https://drive.google.com/drive/folders/14P7ucLX6oXP83v-k-VDq5UozzZ85MI3-?usp=sharing
 Doc
 https://docs.google.com/document/d/1a5n3Mp3De10wJ89DqOGMukRBomUiXQNvvKVGyjHjHzo/edit?usp=sharing
+YouTube Trending Video Dataset:
+https://www.kaggle.com/datasets/rsrishav/youtube-trending-video-dataset/data

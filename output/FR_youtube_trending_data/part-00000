@@ -1,0 +1,492 @@
+date,type,name,rank_count
+2023-11,10,Music,35
+2023-11,20,Gaming,22
+2023-11,24,Entertainment,21
+2023-11,17,Sports,15
+2023-11,23,Comedy,5
+2023-11,1,Film & Animation,5
+2023-11,2,Autos & Vehicles,3
+2023-11,22,People & Blogs,1
+2023-11,26,Howto & Style,1
+2023-11,25,News & Politics,1
+2023-11,28,Science & Technology,1
+2023-10,10,Music,75
+2023-10,24,Entertainment,73
+2023-10,17,Sports,51
+2023-10,20,Gaming,40
+2023-10,23,Comedy,24
+2023-10,25,News & Politics,8
+2023-10,1,Film & Animation,8
+2023-10,27,Education,7
+2023-10,2,Autos & Vehicles,7
+2023-10,28,Science & Technology,7
+2023-10,22,People & Blogs,5
+2023-10,26,Howto & Style,4
+2023-10,19,Travel & Events,1
+2023-09,10,Music,74
+2023-09,17,Sports,63
+2023-09,24,Entertainment,61
+2023-09,20,Gaming,32
+2023-09,23,Comedy,22
+2023-09,1,Film & Animation,11
+2023-09,2,Autos & Vehicles,8
+2023-09,28,Science & Technology,8
+2023-09,25,News & Politics,7
+2023-09,22,People & Blogs,5
+2023-09,26,Howto & Style,4
+2023-09,19,Travel & Events,3
+2023-09,27,Education,2
+2023-08,10,Music,96
+2023-08,17,Sports,61
+2023-08,24,Entertainment,50
+2023-08,20,Gaming,42
+2023-08,19,Travel & Events,26
+2023-08,23,Comedy,10
+2023-08,1,Film & Animation,6
+2023-08,22,People & Blogs,5
+2023-08,27,Education,4
+2023-08,25,News & Politics,4
+2023-08,2,Autos & Vehicles,4
+2023-08,28,Science & Technology,2
+2023-07,10,Music,89
+2023-07,24,Entertainment,69
+2023-07,17,Sports,57
+2023-07,20,Gaming,33
+2023-07,23,Comedy,18
+2023-07,1,Film & Animation,13
+2023-07,22,People & Blogs,9
+2023-07,2,Autos & Vehicles,6
+2023-07,26,Howto & Style,5
+2023-07,25,News & Politics,4
+2023-07,27,Education,3
+2023-07,28,Science & Technology,3
+2023-07,19,Travel & Events,1
+2023-06,10,Music,87
+2023-06,24,Entertainment,65
+2023-06,20,Gaming,52
+2023-06,17,Sports,25
+2023-06,23,Comedy,24
+2023-06,25,News & Politics,11
+2023-06,28,Science & Technology,10
+2023-06,22,People & Blogs,6
+2023-06,2,Autos & Vehicles,6
+2023-06,27,Education,5
+2023-06,1,Film & Animation,5
+2023-06,26,Howto & Style,3
+2023-06,19,Travel & Events,1
+2023-05,10,Music,105
+2023-05,24,Entertainment,65
+2023-05,20,Gaming,37
+2023-05,23,Comedy,31
+2023-05,17,Sports,23
+2023-05,1,Film & Animation,12
+2023-05,2,Autos & Vehicles,8
+2023-05,28,Science & Technology,8
+2023-05,22,People & Blogs,7
+2023-05,27,Education,7
+2023-05,26,Howto & Style,5
+2023-05,25,News & Politics,2
+2023-04,10,Music,76
+2023-04,24,Entertainment,64
+2023-04,17,Sports,52
+2023-04,20,Gaming,44
+2023-04,23,Comedy,31
+2023-04,2,Autos & Vehicles,7
+2023-04,25,News & Politics,6
+2023-04,1,Film & Animation,6
+2023-04,28,Science & Technology,6
+2023-04,27,Education,5
+2023-04,22,People & Blogs,3
+2023-03,10,Music,104
+2023-03,24,Entertainment,49
+2023-03,17,Sports,43
+2023-03,20,Gaming,37
+2023-03,23,Comedy,31
+2023-03,2,Autos & Vehicles,15
+2023-03,22,People & Blogs,8
+2023-03,25,News & Politics,8
+2023-03,1,Film & Animation,8
+2023-03,27,Education,4
+2023-03,28,Science & Technology,2
+2023-03,26,Howto & Style,1
+2023-02,10,Music,77
+2023-02,24,Entertainment,49
+2023-02,20,Gaming,43
+2023-02,17,Sports,37
+2023-02,23,Comedy,20
+2023-02,22,People & Blogs,12
+2023-02,2,Autos & Vehicles,9
+2023-02,28,Science & Technology,8
+2023-02,1,Film & Animation,7
+2023-02,27,Education,5
+2023-02,25,News & Politics,5
+2023-02,26,Howto & Style,1
+2023-02,19,Travel & Events,1
+2023-01,10,Music,80
+2023-01,17,Sports,58
+2023-01,24,Entertainment,58
+2023-01,20,Gaming,46
+2023-01,23,Comedy,21
+2023-01,22,People & Blogs,12
+2023-01,28,Science & Technology,9
+2023-01,1,Film & Animation,7
+2023-01,2,Autos & Vehicles,7
+2023-01,25,News & Politics,5
+2023-01,27,Education,4
+2023-01,26,Howto & Style,2
+2023-01,19,Travel & Events,1
+2022-12,24,Entertainment,70
+2022-12,10,Music,57
+2022-12,17,Sports,55
+2022-12,20,Gaming,46
+2022-12,23,Comedy,37
+2022-12,22,People & Blogs,11
+2022-12,1,Film & Animation,10
+2022-12,2,Autos & Vehicles,9
+2022-12,25,News & Politics,6
+2022-12,27,Education,5
+2022-12,26,Howto & Style,2
+2022-12,19,Travel & Events,1
+2022-12,28,Science & Technology,1
+2022-11,10,Music,86
+2022-11,17,Sports,51
+2022-11,24,Entertainment,50
+2022-11,20,Gaming,32
+2022-11,23,Comedy,31
+2022-11,22,People & Blogs,14
+2022-11,28,Science & Technology,10
+2022-11,1,Film & Animation,9
+2022-11,2,Autos & Vehicles,7
+2022-11,27,Education,6
+2022-11,19,Travel & Events,2
+2022-11,25,News & Politics,2
+2022-10,10,Music,92
+2022-10,24,Entertainment,58
+2022-10,17,Sports,47
+2022-10,20,Gaming,34
+2022-10,23,Comedy,28
+2022-10,22,People & Blogs,17
+2022-10,1,Film & Animation,7
+2022-10,2,Autos & Vehicles,7
+2022-10,27,Education,5
+2022-10,28,Science & Technology,5
+2022-10,25,News & Politics,4
+2022-10,26,Howto & Style,3
+2022-10,15,Pets & Animals,2
+2022-10,19,Travel & Events,1
+2022-09,24,Entertainment,78
+2022-09,10,Music,71
+2022-09,17,Sports,55
+2022-09,23,Comedy,24
+2022-09,20,Gaming,24
+2022-09,22,People & Blogs,13
+2022-09,25,News & Politics,9
+2022-09,1,Film & Animation,7
+2022-09,2,Autos & Vehicles,7
+2022-09,28,Science & Technology,6
+2022-09,26,Howto & Style,3
+2022-09,19,Travel & Events,2
+2022-09,27,Education,1
+2022-08,10,Music,92
+2022-08,24,Entertainment,60
+2022-08,17,Sports,50
+2022-08,20,Gaming,38
+2022-08,19,Travel & Events,24
+2022-08,23,Comedy,19
+2022-08,22,People & Blogs,9
+2022-08,1,Film & Animation,7
+2022-08,28,Science & Technology,5
+2022-08,27,Education,2
+2022-08,25,News & Politics,2
+2022-08,15,Pets & Animals,1
+2022-08,2,Autos & Vehicles,1
+2022-07,10,Music,100
+2022-07,24,Entertainment,66
+2022-07,20,Gaming,43
+2022-07,17,Sports,42
+2022-07,23,Comedy,17
+2022-07,1,Film & Animation,11
+2022-07,22,People & Blogs,10
+2022-07,2,Autos & Vehicles,8
+2022-07,28,Science & Technology,8
+2022-07,25,News & Politics,3
+2022-07,27,Education,1
+2022-07,19,Travel & Events,1
+2022-06,10,Music,92
+2022-06,24,Entertainment,70
+2022-06,20,Gaming,46
+2022-06,23,Comedy,31
+2022-06,22,People & Blogs,25
+2022-06,17,Sports,12
+2022-06,2,Autos & Vehicles,8
+2022-06,27,Education,4
+2022-06,1,Film & Animation,4
+2022-06,28,Science & Technology,3
+2022-06,26,Howto & Style,2
+2022-06,25,News & Politics,2
+2022-06,19,Travel & Events,1
+2022-05,10,Music,95
+2022-05,24,Entertainment,80
+2022-05,20,Gaming,39
+2022-05,23,Comedy,32
+2022-05,17,Sports,23
+2022-05,22,People & Blogs,18
+2022-05,1,Film & Animation,8
+2022-05,2,Autos & Vehicles,5
+2022-05,28,Science & Technology,5
+2022-05,27,Education,3
+2022-05,26,Howto & Style,1
+2022-05,25,News & Politics,1
+2022-04,10,Music,77
+2022-04,24,Entertainment,62
+2022-04,23,Comedy,40
+2022-04,20,Gaming,37
+2022-04,17,Sports,34
+2022-04,22,People & Blogs,20
+2022-04,1,Film & Animation,6
+2022-04,2,Autos & Vehicles,6
+2022-04,28,Science & Technology,6
+2022-04,26,Howto & Style,5
+2022-04,25,News & Politics,4
+2022-04,27,Education,1
+2022-04,19,Travel & Events,1
+2022-03,10,Music,107
+2022-03,24,Entertainment,55
+2022-03,20,Gaming,42
+2022-03,23,Comedy,29
+2022-03,17,Sports,28
+2022-03,22,People & Blogs,20
+2022-03,2,Autos & Vehicles,7
+2022-03,27,Education,6
+2022-03,1,Film & Animation,6
+2022-03,25,News & Politics,4
+2022-03,26,Howto & Style,3
+2022-03,28,Science & Technology,3
+2022-02,10,Music,71
+2022-02,24,Entertainment,68
+2022-02,23,Comedy,38
+2022-02,17,Sports,36
+2022-02,20,Gaming,28
+2022-02,22,People & Blogs,17
+2022-02,25,News & Politics,7
+2022-02,1,Film & Animation,6
+2022-02,2,Autos & Vehicles,6
+2022-02,27,Education,2
+2022-02,28,Science & Technology,1
+2022-01,24,Entertainment,75
+2022-01,10,Music,65
+2022-01,20,Gaming,62
+2022-01,17,Sports,41
+2022-01,23,Comedy,30
+2022-01,22,People & Blogs,15
+2022-01,27,Education,7
+2022-01,2,Autos & Vehicles,6
+2022-01,28,Science & Technology,4
+2022-01,26,Howto & Style,2
+2022-01,1,Film & Animation,2
+2022-01,19,Travel & Events,1
+2021-12,24,Entertainment,89
+2021-12,10,Music,73
+2021-12,23,Comedy,43
+2021-12,17,Sports,33
+2021-12,20,Gaming,32
+2021-12,22,People & Blogs,17
+2021-12,1,Film & Animation,6
+2021-12,2,Autos & Vehicles,6
+2021-12,25,News & Politics,4
+2021-12,28,Science & Technology,3
+2021-12,27,Education,2
+2021-12,26,Howto & Style,1
+2021-12,19,Travel & Events,1
+2021-11,10,Music,85
+2021-11,24,Entertainment,79
+2021-11,23,Comedy,41
+2021-11,17,Sports,30
+2021-11,20,Gaming,27
+2021-11,22,People & Blogs,21
+2021-11,27,Education,4
+2021-11,28,Science & Technology,4
+2021-11,2,Autos & Vehicles,3
+2021-11,26,Howto & Style,2
+2021-11,25,News & Politics,2
+2021-11,1,Film & Animation,2
+2021-10,10,Music,89
+2021-10,24,Entertainment,77
+2021-10,23,Comedy,37
+2021-10,20,Gaming,34
+2021-10,17,Sports,33
+2021-10,22,People & Blogs,9
+2021-10,28,Science & Technology,9
+2021-10,1,Film & Animation,8
+2021-10,2,Autos & Vehicles,5
+2021-10,27,Education,4
+2021-10,26,Howto & Style,4
+2021-10,25,News & Politics,1
+2021-09,10,Music,97
+2021-09,24,Entertainment,55
+2021-09,17,Sports,54
+2021-09,20,Gaming,38
+2021-09,23,Comedy,27
+2021-09,28,Science & Technology,7
+2021-09,22,People & Blogs,6
+2021-09,27,Education,5
+2021-09,2,Autos & Vehicles,4
+2021-09,25,News & Politics,2
+2021-09,1,Film & Animation,2
+2021-09,29,Nonprofits & Activism,2
+2021-09,19,Travel & Events,1
+2021-08,10,Music,94
+2021-08,24,Entertainment,75
+2021-08,17,Sports,50
+2021-08,20,Gaming,28
+2021-08,22,People & Blogs,26
+2021-08,23,Comedy,20
+2021-08,28,Science & Technology,7
+2021-08,1,Film & Animation,4
+2021-08,27,Education,3
+2021-08,25,News & Politics,2
+2021-08,26,Howto & Style,1
+2021-07,10,Music,114
+2021-07,24,Entertainment,59
+2021-07,17,Sports,39
+2021-07,23,Comedy,32
+2021-07,20,Gaming,28
+2021-07,22,People & Blogs,17
+2021-07,25,News & Politics,6
+2021-07,1,Film & Animation,4
+2021-07,27,Education,3
+2021-07,2,Autos & Vehicles,3
+2021-07,28,Science & Technology,3
+2021-07,26,Howto & Style,2
+2021-06,10,Music,91
+2021-06,24,Entertainment,70
+2021-06,20,Gaming,37
+2021-06,23,Comedy,36
+2021-06,17,Sports,32
+2021-06,22,People & Blogs,11
+2021-06,2,Autos & Vehicles,7
+2021-06,28,Science & Technology,6
+2021-06,26,Howto & Style,3
+2021-06,25,News & Politics,3
+2021-06,27,Education,2
+2021-06,19,Travel & Events,1
+2021-06,1,Film & Animation,1
+2021-05,10,Music,106
+2021-05,24,Entertainment,80
+2021-05,17,Sports,32
+2021-05,23,Comedy,25
+2021-05,20,Gaming,23
+2021-05,22,People & Blogs,16
+2021-05,1,Film & Animation,7
+2021-05,27,Education,6
+2021-05,28,Science & Technology,6
+2021-05,25,News & Politics,3
+2021-05,2,Autos & Vehicles,3
+2021-05,26,Howto & Style,2
+2021-05,19,Travel & Events,1
+2021-04,10,Music,76
+2021-04,24,Entertainment,72
+2021-04,20,Gaming,48
+2021-04,23,Comedy,36
+2021-04,17,Sports,23
+2021-04,22,People & Blogs,12
+2021-04,28,Science & Technology,12
+2021-04,2,Autos & Vehicles,7
+2021-04,1,Film & Animation,5
+2021-04,25,News & Politics,4
+2021-04,27,Education,3
+2021-04,26,Howto & Style,2
+2021-03,10,Music,110
+2021-03,24,Entertainment,80
+2021-03,20,Gaming,31
+2021-03,23,Comedy,27
+2021-03,17,Sports,23
+2021-03,22,People & Blogs,15
+2021-03,28,Science & Technology,9
+2021-03,25,News & Politics,5
+2021-03,1,Film & Animation,4
+2021-03,27,Education,2
+2021-03,26,Howto & Style,2
+2021-03,2,Autos & Vehicles,2
+2021-02,10,Music,103
+2021-02,24,Entertainment,61
+2021-02,17,Sports,30
+2021-02,20,Gaming,30
+2021-02,23,Comedy,26
+2021-02,22,People & Blogs,10
+2021-02,28,Science & Technology,9
+2021-02,1,Film & Animation,4
+2021-02,2,Autos & Vehicles,3
+2021-02,27,Education,2
+2021-02,26,Howto & Style,1
+2021-02,25,News & Politics,1
+2021-01,10,Music,97
+2021-01,24,Entertainment,81
+2021-01,17,Sports,34
+2021-01,20,Gaming,33
+2021-01,23,Comedy,30
+2021-01,22,People & Blogs,14
+2021-01,28,Science & Technology,9
+2021-01,26,Howto & Style,4
+2021-01,27,Education,3
+2021-01,1,Film & Animation,3
+2021-01,25,News & Politics,2
+2020-12,10,Music,102
+2020-12,24,Entertainment,68
+2020-12,23,Comedy,45
+2020-12,17,Sports,26
+2020-12,20,Gaming,23
+2020-12,22,People & Blogs,15
+2020-12,28,Science & Technology,10
+2020-12,1,Film & Animation,7
+2020-12,25,News & Politics,6
+2020-12,27,Education,5
+2020-12,26,Howto & Style,2
+2020-12,2,Autos & Vehicles,1
+2020-11,10,Music,116
+2020-11,24,Entertainment,69
+2020-11,23,Comedy,38
+2020-11,17,Sports,25
+2020-11,20,Gaming,21
+2020-11,22,People & Blogs,8
+2020-11,26,Howto & Style,5
+2020-11,25,News & Politics,5
+2020-11,1,Film & Animation,5
+2020-11,27,Education,4
+2020-11,28,Science & Technology,3
+2020-11,2,Autos & Vehicles,1
+2020-10,10,Music,128
+2020-10,24,Entertainment,77
+2020-10,17,Sports,28
+2020-10,23,Comedy,28
+2020-10,20,Gaming,27
+2020-10,28,Science & Technology,6
+2020-10,22,People & Blogs,5
+2020-10,26,Howto & Style,5
+2020-10,25,News & Politics,5
+2020-10,1,Film & Animation,1
+2020-09,10,Music,121
+2020-09,24,Entertainment,45
+2020-09,17,Sports,41
+2020-09,23,Comedy,39
+2020-09,20,Gaming,20
+2020-09,22,People & Blogs,15
+2020-09,28,Science & Technology,6
+2020-09,1,Film & Animation,4
+2020-09,27,Education,3
+2020-09,26,Howto & Style,2
+2020-09,25,News & Politics,2
+2020-09,15,Pets & Animals,1
+2020-09,2,Autos & Vehicles,1
+2020-08,10,Music,110
+2020-08,24,Entertainment,54
+2020-08,23,Comedy,23
+2020-08,17,Sports,19
+2020-08,22,People & Blogs,18
+2020-08,20,Gaming,17
+2020-08,27,Education,7
+2020-08,1,Film & Animation,5
+2020-08,2,Autos & Vehicles,3
+2020-08,26,Howto & Style,1
+2020-08,19,Travel & Events,1
+2020-08,28,Science & Technology,1
