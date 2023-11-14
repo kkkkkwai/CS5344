@@ -669,3 +669,17 @@ yourselves
 you've
 z
 zero
+www
+http
+https
+video
+youtube
+facebook
+new
+follow
+like
+watch
+subscribe
+channel
+instagram
+twitter

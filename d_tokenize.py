@@ -2,7 +2,7 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 import nltk
 
-class Tokenizer:
+class Tokenizer():
     def __init__(self) -> None:
         nltk.download("punkt")
         nltk.download('stopwords')
