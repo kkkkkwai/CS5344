@@ -1,7 +1,8 @@
+## Config env
+Run on Mac OS or Linux (PySpark have issue on Window)
 
-Running on Mac OS, can not Running on Window (becuae PySpark have a bug on Window OS)
-
-1.Config env
+Before running the program, please make sure java,spark cluster,python3, and Mac OS correctly. 
+```
 alias python=python3
 #java
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
@@ -19,10 +20,9 @@ export PYSPARK_PYTHON=/opt/homebrew/bin/python3
 export PATH="$PATH:$PYSPARK_PYTHON"
 export PYSPARK_DRIVER_PYTHON=/opt/homebrew/bin/python3
 export PATH="$PATH:$PYSPARK_DRIVER_PYTHON"
+```
 
-*Before running the program, please make sure java,spark cluster,python3, and Mac OS correctly. 
-
-2. Generate analysis data 
+## Generate analysis data 
 Input data source:
 YouTube Trending Video Dataset:
 https://www.kaggle.com/datasets/rsrishav/youtube-trending-video-dataset/data
@@ -31,22 +31,23 @@ this project/data/youtube_category.csv
 
 Output file: 
 Main function is handle_most_popular.py 
-*change the dataset file path in the main function, and then run the main function. 
+* change the dataset file path in the main function, and then run the main function. 
 
 the program will be excute below steps: 
-#0.load category data
-#1.load data and choose the item
-#2.remove the duplicate reocrds and wrong records (found only one wrong record)
-#3.handle top rank by value in date 
-#4.choose top 10 rank records only
-#5.aggregate top 10 rank per month
-#6.order by monty and rank_count
-#7.save the data
-#8.add title for export data
+1. load category data
+2. load data and choose the item
+3. remove the duplicate reocrds and wrong records (found only one wrong record)
+4. handle top rank by value in date 
+5. choose top 10 rank records only
+6. aggregate top 10 rank per month
+7. order by monty and rank_count
+8. save the data
+9. add title for export data
 
-3.Visualization analysis of exported data (Needs install Jupyter)
+## Visualization analysis of exported data (Needs install Jupyter)
 the export data already is analysis data, the data size is smaller than raw data. 
 so we can easly use EDA Visualization analysis data. 
+
 EDA Visualization analysis:
-final-analysis-most-popular.ipynb (analysis the export data) *Mainly use this one to analysis export data. 
-pre-analysis-most-popular.ipynb (pre analysis US raw data)
+* final-analysis-most-popular.ipynb (analysis the export data) *Mainly use this one to analysis export data. 
+* pre-analysis-most-popular.ipynb (pre analysis US raw data)

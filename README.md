@@ -1,28 +1,15 @@
-# CS5344
+# CS5344 YouTube Video Popularity Analysis
 
-## Requirements
-The scripts in this repository run with python version 3.9.18. Run `pip install -r requirements.txt` if they have any dependency issue.
+## Dataset
+Dataset is downloaded from [Kaggle](https://www.kaggle.com/datasets/rsrishav/youtube-trending-video-dataset) and [Kaggle](https://www.kaggle.com/datasets/datasnaek/youtube-new). Dataset contains more than 4GB data of trending youtube videos in different countries.
 
-## Preprocess
-Download dataset into data directory. Modify `TRENDING_VIDEO_DATA` in preprocess.py if necessary, then run
-`python preprocess.py`
+## Requirements and Preprocess
+The scripts in this repository run with python version 3.9.18. Run `pip install -r requirements.txt` if there is dependency issue.
 
-## Tokenizer
-Add `from d_tokenize import Tokenizer` to use the tokenizer during analysis
+Download dataset into data directory. Modify _TRENDING_VIDEO_DATA_ in preprocess.py if necessary, then run
+```
+python preprocess.py
+```
 
-
-Data sources:
-CA,GB,US and JP
-
-Data time 
-before 11.1.2023  00:00:00
-
-Resources: 
-PPT 
-https://docs.google.com/presentation/d/16jOMlzh9_XDFaQybQH9hBKBQK15IlTs74P1QWNR0-d0/edit?usp=sharing
-Video
-https://drive.google.com/drive/folders/14P7ucLX6oXP83v-k-VDq5UozzZ85MI3-?usp=sharing
-Doc
-https://docs.google.com/document/d/1a5n3Mp3De10wJ89DqOGMukRBomUiXQNvvKVGyjHjHzo/edit?usp=sharing
-YouTube Trending Video Dataset:
-https://www.kaggle.com/datasets/rsrishav/youtube-trending-video-dataset/data
+## Analysis and Prediction Model
+Refer to [this](analysis/README.md) for instructions to run the analysis
