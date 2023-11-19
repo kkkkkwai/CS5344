@@ -4,13 +4,12 @@ sys.path.append(".")
 
 from tokenizer_util import tokenize_description, tokenize_tag
 from pyspark.sql import SparkSession, DataFrame, Window
-from pyspark.sql.functions import date_diff, dense_rank
+from pyspark.sql.functions import date_diff, dense_rank, col
 from pyspark.ml import Transformer
-from pyspark.ml.regression import DecisionTreeRegressor
+from pyspark.ml.regression import DecisionTreeRegressor, RandomForestRegressor
 from pyspark.ml.feature import (
     VectorAssembler,
     HashingTF,
-    MinHashLSH,
 )
 from pyspark.mllib.evaluation import RegressionMetrics
 
@@ -18,14 +17,19 @@ from pyspark.mllib.evaluation import RegressionMetrics
 ROOT_PATH = "/home/kw/CS5344/CS5344/data/youtube-trending-video-dataset/"
 TEST_PATH = "/home/kw/CS5344/CS5344/data/test_dataset/"
 PREDICT_OUTPUT = "/home/kw/CS5344/CS5344/data/predict"
-COUNTRIES = ["CA", "US"]
+COUNTRIES = ["CA", "US", "GB", "JP"]
 
 
 def filter_and_cast(df: DataFrame) -> DataFrame:
     # Keep only data before 11-01
     df = df[df["trending_date"] < "2023-11-01"]
     df = df.fillna("")
-    df = df.drop_duplicates(["video_id"])
+    df = df.withColumn(
+        "rank",
+        dense_rank().over(
+            Window.partitionBy("video_id").orderBy(col("trending_date").desc())
+        ),
+    ).filter(col("rank") == 1)
 
     df = df.withColumn(
         "days_since_published", date_diff(df["trending_date"], df["publishedAt"])
@@ -42,22 +46,21 @@ def filter_and_cast(df: DataFrame) -> DataFrame:
 
 def construct_hashing_assembler() -> tuple[Transformer, Transformer, Transformer]:
     hashing_text = HashingTF(
-        numFeatures=32,
+        numFeatures=512,
         inputCol="filtered_words",
-        outputCol="hashed_words",
+        outputCol="final_words",
     )
     hashing_tags = HashingTF(
-        numFeatures=8,
+        numFeatures=64,
         inputCol="filtered_tags",
-        outputCol="hashed_tags",
+        outputCol="final_tags",
     )
     assembler = VectorAssembler(
         inputCols=[
-            # "days_since_published",
             "comments_disabled",
             "categoryId",
-            "hashed_words",
-            "hashed_tags",
+            "final_words",
+            "final_tags",
         ],
         outputCol="features",
         handleInvalid="skip",
@@ -67,12 +70,14 @@ def construct_hashing_assembler() -> tuple[Transformer, Transformer, Transformer
 
 def train(
     spark: SparkSession,
-) -> tuple[Transformer, Transformer, Transformer, Transformer]:
+) -> tuple[Transformer, Transformer, Transformer, Transformer, Transformer]:
     """
     Returns
     -------
     :py:class:`Transformer`
         description transformer
+    :py:class:`Transformer`
+        description minhash
     :py:class:`Transformer`
         tags transformer
     :py:class:`Transformer`
@@ -95,20 +100,24 @@ def train(
     df = hashing_tags.transform(df)
     df = assembler.transform(df)
 
-    regressor = DecisionTreeRegressor(
-        maxDepth=10,
-        maxMemoryInMB=512,
+    regressor = RandomForestRegressor(
+        numTrees=20,
+        maxDepth=12,
+        maxMemoryInMB=4096,
         featuresCol="features",
         labelCol="view_count",
         predictionCol="prediction",
+        subsamplingRate=0.5,
     )
+
     model = regressor.fit(df)
-    # regressor.save("model/decision_tree")
+
     return hashing_text, hashing_tags, assembler, model
 
 
 def evaluate(
     hashing_text: Transformer,
+    min_hash: Transformer,
     hashing_tags: Transformer,
     assembler: Transformer,
     model: Transformer,
@@ -149,13 +158,24 @@ def evaluate(
     metrics = RegressionMetrics(df.select("expected", "predicted").rdd.map(tuple))
     print(f"MAE: {metrics.meanAbsoluteError}, MSE: {metrics.meanSquaredError}")
     sub_df = df.limit(100).select(
-        ["video_id", "title", "channelId", "channelTitle", "expected", "predicted"]
+        [
+            "video_id",
+            "title",
+            "channelId",
+            "channelTitle",
+            "expected",
+            "predicted",
+            "view_count",
+            "prediction",
+        ]
     )
-    sub_df.write.csv(f"{PREDICT_OUTPUT}/decision_tree1.csv", header=True)
+    sub_df.write.csv(f"{PREDICT_OUTPUT}/random_forest", header=True)
 
 
 if __name__ == "__main__":
+    # from pyspark import SparkContext
+    # SparkContext.setSystemProperty('spark.driver.memory', '6g')
     spark: SparkSession = SparkSession.builder.getOrCreate()
-    hashing_text, hashing_tags, assembler, model = train(spark)
+    hashing_text, _, hashing_tags, assembler, model = train(spark)
     print(model.featureImportances)
     evaluate(hashing_text, hashing_tags, assembler, model)
